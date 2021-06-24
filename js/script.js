@@ -24,3 +24,18 @@ if (randomNumber == '1') {
 }
 printMessage('Mój ruch: ' + computerMove);
 computerMove = 0;
+
+var item, playerInput, playerMove;
+playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+console.log('Wpisana odpowiedź to: ' + playerInput);
+if (playerInput == '1') {
+  playerMove = 'kamień';
+} else if (playerInput == '2') {
+  playerMove = 'papier';
+} else if (playerInput == '3') {
+  playerMove = 'nozyce';
+} else {
+  playerMove = 'kamień';
+  printMessage('nieznany ruch');
+}
+printMessage('Twój ruch: ' + playerMove);
