@@ -16,7 +16,7 @@ var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
  buttonPaper = document.getElementById('button-paper');
  buttonScissors = document.getElementById('button-scissors');
 
-function buttonClicked(argButtonName) {
+function buttonClicked(argButtonName ) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 }
