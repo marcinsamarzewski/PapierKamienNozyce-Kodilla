@@ -1,4 +1,4 @@
-function printMessage(msg){
+const printMessage = function (msg){
 	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
@@ -7,20 +7,19 @@ function printMessage(msg){
 function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
-let argButtonName,buttonPaper, buttonRock, buttonScissors, buttonTest;
 
 /**
  * Describe this function...
  */
- buttonRock = document.getElementById('button-rock');
- buttonPaper = document.getElementById('button-paper');
- buttonScissors = document.getElementById('button-scissors');
+ const buttonRock = document.getElementById('button-rock');
+ const buttonPaper = document.getElementById('button-paper');
+ const buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName ) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  let argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNumber;
+
 
   /**
    * Describe this function...
